@@ -2,7 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Vans() {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [vans, setVans] = React.useState([]);
+
+  const typeFilter = searchParams.get("type");
+  console.log(typeFilter);
 
   React.useEffect(() => {
     fetch("/api/vans")
@@ -29,9 +33,7 @@ export default function Vans() {
   return (
     <div className="van-list-container">
       <h1>Explore our van options </h1>
-      <div className="van-list">
-        {vanElements}
-      </div>
+      <div className="van-list">{vanElements}</div>
     </div>
   );
 }
