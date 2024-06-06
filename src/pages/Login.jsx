@@ -18,7 +18,7 @@ export default function Login() {
     e.preventDefault();
     setStatus("submitting");
     loginUser(loginFormData)
-      .then((data) => {
+      .then(() => {
         setError(null);
         localStorage.setItem("loggedin", true);
         navigate(from, { replace: true });
