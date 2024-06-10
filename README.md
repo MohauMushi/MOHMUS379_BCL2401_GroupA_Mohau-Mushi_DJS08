@@ -5,6 +5,10 @@
 
 This project is a React application that demonstrates the use of React Router for implementing client-side routing and navigation. It was developed as part of a learning exercise to understand and apply the concepts of React Router.
 
+## Login Page Details
+- Username/Email: b@b.com 
+- Password: p123
+
 ## Getting Started
 
 After cloning the repository, run the following command to install the required dependencies:
