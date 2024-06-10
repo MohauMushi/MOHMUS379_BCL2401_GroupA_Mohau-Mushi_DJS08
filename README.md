@@ -1,42 +1,48 @@
 # DJS08 Project Brief: React Router 
 
-🎥 INSERT LOOM PRESENTATION LINK: [Here]
+**React Router**
+🎥 Loom Presentation Link: [https://www.loom.com/share/62db750a3e0b4ddd81e568a530a35296?sid=c70c578d-4ed3-4136-90ed-b1ea3961eea0]
 
-After cloning the repo, run `npm install` to install the dependencies 
+This project is a React application that demonstrates the use of React Router for implementing client-side routing and navigation. It was developed as part of a learning exercise to understand and apply the concepts of React Router.
 
-Are you ready to get stuck into some React Router? For this challenge, you are required to code along with the lecturer from this lesson: [VanLife Project Bootstrapping](https://scrimba.com/learn/react/vanlife-project-bootstrapping-co8bc40b191eec875ecf00b23).
+## Getting Started
 
-For this challenge you are required to code along with the lecturer from this lesson: https://scrimba.com/learn/react/vanlife-project-bootstrapping-co8bc40b191eec875ecf00b23
+After cloning the repository, run the following command to install the required dependencies:
 
-The starter code has all the CSS styling required for the project; you will just need to link the corresponding classes as you code along. Jump into the start code here: [GitHub Repository](https://github.com/CodeSpace-Academy/StudentNo_Classcode_Group_Name-Surname_DJS08/tree/main).
+```
+npm install
+```
 
-The focus for this project will be to understand routing and present your code. Along with your code, you will need to submit a recorded presentation talking through the presentation points included below.
+## Project Overview
 
-## React Routing Presentation Talking Points
+For this project, I coded along with the lecturer from the "VanLife Project Bootstrapping" lesson on Scrimba. The lesson covered the basics of React Router, including setting up routes, defining nested routes, using route parameters, and implementing navigation controls.
 
-For your recorded presentation, you will be discussing key concepts related to React Router, an essential tool for building single-page applications. To illustrate your understanding, address the following three questions in your presentation. These questions are designed to test your knowledge of the content from the "Advanced React Routing" Van Life Project, including setup, functionality, and application of React Router.
+The starter code provided all the necessary CSS styling, and the focus was on understanding routing and presenting the code through a recorded presentation.
+
+## Presentation Talking Points
 
 ### Question 1: Explain the Setup and Basic Configuration of React Router
 
-**Key Points to Cover:**
-- What is the purpose of using React Router in a React application?
-- How do you set up React Router using `BrowserRouter` as shown in the lessons?
-- Describe the role of the `<Routes>` and `<Route>` components in defining the navigation structure.
+- **Purpose of React Router**: React Router is a library that enables client-side routing in React applications. It allows developers to create a single-page application (SPA) with multiple views and manage the application's state and URL history.
+
+- **Setting up React Router with BrowserRouter**: React Router is set up by importing and rendering the `BrowserRouter` component from the `react-router-dom` library. This component provides the necessary context for the Router functionality and manages the browser's URL history.
+
+- **Routes and Route Components**: The `<Routes>` component is used to define the navigation structure of the application. Inside `<Routes>`, multiple `<Route>` components are defined, each representing a specific URL path. Each `<Route>` component renders a particular component based on the current URL path.
 
 ### Question 2: Application of Route Parameters and Nested Routes
 
-**Key Points to Cover:**
-- Explain what route parameters are and how they are used in React Router, including the use of `useParams()` to access these parameters.
-- Discuss the concept of nested routes as introduced in the lessons. What are nested routes, and how do they benefit the structure of a React application?
-- Provide an example, such as the configuration for nested routes in the VanLife project.
+- **Route Parameters**: Route parameters are dynamic segments in the URL path that can be accessed and used within components. React Router provides the `useParams` hook to retrieve these parameters from the URL. Route parameters are useful for displaying or fetching data based on the URL path.
+
+- **Nested Routes**: Nested routes allow for a hierarchical structure of routes within an application. This is achieved by rendering child routes inside a parent route. Nested routes help organize and group related views or components together, making the application structure more maintainable and scalable.
+
+- **Example of Nested Routes**: In the VanLife project, nested routes were used to organize the different pages and components related to van rentals. For instance, the `/vans/:id` route could have nested routes like `/vans/:id/details` and `/vans/:id/pricing` to display specific information about a particular van.
 
 ### Question 3: Implementation of Navigation Controls and Dynamic Linking
 
-**Key Points to Cover:**
-- How does the `<Link>` component enhance navigation within a React application?
-- Describe the use of `NavLink` for active styling. What makes `NavLink` different from the basic `Link` component?
-- Discuss the use of search parameters and the `useSearchParams` hook to dynamically filter content, as seen in the VanLife project challenges.
+- **Link Component**: The `<Link>` component from React Router is used for navigating between different routes within the application. It renders an accessible `<a>` element and updates the URL history when clicked, providing a seamless client-side navigation experience.
 
-Be prepared to provide code snippets and real-world application examples from your Van Life Project to support your explanations.
+- **NavLink and Active Styling**: The `<NavLink>` component is a special type of `<Link>` that can apply active styles to the rendered element based on the current URL. This is useful for highlighting the active navigation link in a menu or navigation bar.
 
-Make sure to submit your project to the DJS08 Project Tab on the LMS. Include a link to your Loom Presentation in your README.
+- **Search Parameters and useSearchParams Hook**: React Router provides the `useSearchParams` hook to access and manipulate the query string parameters in the URL. This hook returns an array with the current search parameters and a function to update them. In the VanLife project, search parameters were used to dynamically filter and display van rentals based on user input.
+
+Throughout the presentation, I provided code snippets and real-world examples from the VanLife project to illustrate the concepts and implementations discussed.
